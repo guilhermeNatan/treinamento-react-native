@@ -60,6 +60,10 @@ IDE recomendada Webstorm
    - passando props para o header 
    
    ## Lista de pessoas
+   criar o componente lista 
+   
+   ```  {[1,2,3].map(()=><Text>nome</Text>)}```
+   
    O que acontece quando não passamos uma key ? 
         
    react não consegue distinguir entre elementos 

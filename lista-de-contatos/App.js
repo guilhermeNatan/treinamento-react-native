@@ -8,13 +8,15 @@
 
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Header from "./src/components/Header";
+import Header from "./src/components/Header/Header";
+import Lista from "./src/components/Lista/Lista";
 
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Header title={"Pessoas"}/>
+      <Lista />
     </View>
   );
 }
