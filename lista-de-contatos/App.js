@@ -1,25 +1,38 @@
-
-// <div id="root"> </div>
-//
-// ReactDOM.render(
-//     <App />,
-//     document.getElementById('root')
-// );
-
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Header from "./src/components/Header/Header";
-import Lista from "./src/components/Lista/Lista";
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import PeopleListPage from "./src/Pages/PeopleListPage/PeopleListPage";
+import PeopleDetailPage from "./src/Pages/PeopleDetailPage/PeopleDetailPage";
 
+const stackNavigator =  createStackNavigator ({
+    Home: {
+        screen: PeopleListPage,
+    },
+    peopleDetail: {
+        screen: PeopleDetailPage,
+        navigationOptions: ({navigation})=> {
+            return ( {
+               title: navigation.state.params.people.name.first,
+           })
+        }
+    }
+}, {
+    defaultNavigationOptions : {
+        title: 'Pessoas',
+        headerTintColor: 'white',
+        headerStyle: {
+            backgroundColor: "#7559ff",
+            borderBottomWidth: 1,
+            borderBottomColor: 'blue',
+        },
+        headerTitleStyle: {
+            color: 'white',
+            fontSize: 30,
+        },
+    }
+})
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Header title={"Pessoas"}/>
-      <Lista />
-    </View>
-  );
-}
+const appContainer = createAppContainer(stackNavigator)
 
-const styles = StyleSheet.create({
-});
+export default appContainer;

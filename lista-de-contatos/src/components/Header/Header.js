@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { Text, View } from 'react-native';
+import styles from './HeaderStyles';
 
 const Header = ({title}) => {
     return (
@@ -9,18 +9,6 @@ const Header = ({title}) => {
         </View>
     );
 };
-const styles = StyleSheet.create({
-    container: {
-      backgroundColor: "#5464ff",
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: 20
-    },
-    title: {
-        fontSize: 50,
-        color: '#fff'
-    }
-});
 
 
 export default Header;
