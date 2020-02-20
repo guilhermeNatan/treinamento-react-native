@@ -11,6 +11,10 @@ const PeopleDetailPage = props => {
             <Line label={"Cidade"}  valor={people.location.city}/>
             <Line label={"Estado"}  valor={people.location.state}/>
             <Line label={"Telefone"}  valor={people.phone}/>
+            <Line label={"Telefone"}  valor={people.phone}/>
+            <Line label={"Telefone"}  valor={people.phone}/>
+
+
         </View>
     );
 };
