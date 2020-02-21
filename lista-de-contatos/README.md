@@ -2,26 +2,24 @@
   Guilherme Natan 
   
 # Apresentação inicial (conceitos)
+## Parte 1
   - Aplicativo nativo x Aplicativo híbridos 
   - State, Props 
   - Diferenças entre React Js e React native
   - Navegação usando react-navigation
   - Flexbox 
-  - Dimensions
   - React native elements
   
-  
- # Encerramento  
+## Parte 2
   - Boas práticas de programação
   - React native realmente é nativo 
   - Bridge 
   - APIS de componentes 
-  - Hooks
   
   
 # Configuração de ambiente 
-
- - Instalando o expo cli   
+- Instalar o android studio
+- Instalando o expo cli   
    
    ```npm install expo-cli --global```
   
@@ -36,71 +34,9 @@
 ```
 IDE recomendada Webstorm 
   
-# Roteiro de implementação 
-##  Explicando código gerado
-    App.js 
-    Texts e Views 
-    Imports (uso de destruction)
-        import { Text } from 'react-native' 
-        const Text = ReactNative.Text
-    Stylesheet
-```
-<div id="root"> </div>
-   
-   ReactDOM.render(
-     <App />,
-     document.getElementById('root')
-   );
-```
- ## Criando Header 
-   - src/components/Header 
-   - usar classe (statefull) ou funçao (stateless | Functional)
-   - Estilizando o header 
-   - explicando  stylesheet 
-   - passando props para o header 
-   
-   ## PeopleListV1 de pessoas
-   criar o componente lista 
-   
-   ```  {[1,2,3].map(()=><Text>nome</Text>)}```
-   
-   O que acontece quando não passamos uma key ? 
-        
-   react não consegue distinguir entre elementos 
-   - Desatio: Estilizar a lista 
-   
-   ## AXIOS - Buscando dados de uma api - PROMISES 
-   https://randomuser.me/api/nat=br&results=5
-   instando a dependencia do axios 
-   
-   ```yarn add axios```
-   
-   requisicoes assincronas 
-   
-   Promises:  
-   
-   
-# Desafios
- - Estilizar a lista 
- - Implementar a segunda tela 
- - Implementar tela de login com simulação de autenticacao
- - Refatorar seguindo boas práticas
- - Implementar utilizando a lib react-native-elements
- 
- 
- 
-## Dúvidas
-pq nao se usa jsx ? 
-react native é realmente nativo ? 
-Exemplos de aplicacoes que usam RN 
-DOM 
-interface html css javascript pode manipular para construir paginas htmls
-quem define esse padrao é a w3c 
-Estrutura em árvore  Window -> document -> html  -> head 
-                                                 -> body
+  
 
-
-## Roteiro 
+# Roteiro  
 Introducao : 45 min 
 
 1 - PREPARAR AMBIENTE : 20 min  
@@ -226,3 +162,22 @@ TODO: QUEBRAR EM MAIS ATIVIDADES
     
     -React navigation
     https://reactnavigation.org/docs/en/getting-started.html
+  
+  
+## Buscando dados de uma api 
+   https://randomuser.me/api?nat=br&results=5
+   instalando a dependencia do axios 
+   
+   ```yarn add axios```
+   
+   requisicões assíncronas 
+     
+   
+# Desafios
+ - Estilizar a lista 
+ - Implementar a segunda tela 
+ - Implementar tela de login com simulação de autenticacao
+ - Refatorar seguindo boas práticas
+ - Implementar utilizando a lib react-native-elements
+ 
+ 
