@@ -1,8 +1,7 @@
-#Autor
-  Guilherme Natan 
-  
-# Apresentação inicial (conceitos)
-## Parte 1
+
+# Apresentação 
+
+## Parte 1 - Introdução 
   - Aplicativo nativo x Aplicativo híbridos 
   - State, Props 
   - Diferenças entre React Js e React native
@@ -10,11 +9,12 @@
   - Flexbox 
   - React native elements
   
-## Parte 2
-  - Boas práticas de programação
+## Parte 2 - Conceitos avançados
   - React native realmente é nativo 
+  - Boas práticas de programação
   - Bridge 
-  - APIS de componentes 
+  - Redux 
+  - Hooks
   
   
 # Configuração de ambiente 
@@ -27,11 +27,17 @@
   
    ```sudo n stable```
   - Iniciando projeto
- ```  
+ ```ignorelang
       expo init lista-de-contatos
       cd lista-de-contatos
       expo start 
 ```
+ Configurar variáveis de ambiente
+ ```ignorelang
+export ANDROID_HOME=/home/<usuario>/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+```
+
 IDE recomendada Webstorm 
   
   
@@ -140,10 +146,35 @@ Introducao : 45 min
 
 Implementar o loading ActivityIndicator
 
+5 - [Atividade - Desafio] Construir a tela de login 
 
 
-5 - [Atividade - Desafio] Eles montam a tela de login 
-TODO: QUEBRAR EM MAIS ATIVIDADES 
+
+## Buscando dados de uma api 
+   https://randomuser.me/api?nat=br&results=5
+   instalando a dependencia do axios 
+   
+   ```yarn add axios```
+   
+   requisicões assíncronas 
+     
+   
+## Desafios
+ - Estilizar a lista 
+ - Implementar a segunda tela 
+ - Implementar tela de login com simulação de autenticacao
+ - Refatorar seguindo boas práticas
+ - Implementar utilizando a lib react-native-elements
+ 
+ 
+## Instruções para executar o aplicativo 
+```ignorelang
+git clone https://github.com/guilhermeNatan/treinamento-react-native.git
+cd lista-de-contatos
+yarn install 
+expo start 
+```
+
 
 
 ##Referências 
@@ -164,20 +195,6 @@ TODO: QUEBRAR EM MAIS ATIVIDADES
     https://reactnavigation.org/docs/en/getting-started.html
   
   
-## Buscando dados de uma api 
-   https://randomuser.me/api?nat=br&results=5
-   instalando a dependencia do axios 
-   
-   ```yarn add axios```
-   
-   requisicões assíncronas 
-     
-   
-# Desafios
- - Estilizar a lista 
- - Implementar a segunda tela 
- - Implementar tela de login com simulação de autenticacao
- - Refatorar seguindo boas práticas
- - Implementar utilizando a lib react-native-elements
- 
- 
+#Autor
+ Guilherme Natan 
+    
