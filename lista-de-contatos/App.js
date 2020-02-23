@@ -1,38 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-import PeopleListPage from "./src/Pages/PeopleListPage/PeopleListPage";
-import PeopleDetailPage from "./src/Pages/PeopleDetailPage/PeopleDetailPage";
+import { Provider } from 'react-redux';
+import { createStore  } from 'redux';
+import {
+    View,
+} from 'react-native';
 
-const stackNavigator =  createStackNavigator ({
-    Home: {
-        screen: PeopleListPage,
-    },
-    peopleDetail: {
-        screen: PeopleDetailPage,
-        navigationOptions: ({navigation})=> {
-            return ( {
-               title: navigation.state.params.people.name.first,
-           })
-        }
-    }
-}, {
-    defaultNavigationOptions : {
-        title: 'Pessoas',
-        headerTintColor: 'white',
-        headerStyle: {
-            backgroundColor: "#7559ff",
-            borderBottomWidth: 1,
-            borderBottomColor: 'blue',
-        },
-        headerTitleStyle: {
-            color: 'white',
-            fontSize: 30,
-        },
-    }
-})
+import rootReducer from './src/reducers';
+import Router from './src/navigation/Router';
 
-const appContainer = createAppContainer(stackNavigator)
+const store = createStore(rootReducer);
 
-export default appContainer;
+
+const LojaVirtualApp = () => (
+    <View style={{ width: '100%', height: '100%' }}>
+        <Provider store={store}>
+            <Router />
+        </Provider>
+    </View>
+);
+
+export default LojaVirtualApp;
