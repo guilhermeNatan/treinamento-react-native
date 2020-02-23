@@ -1,16 +1,16 @@
 import { StyleSheet} from "react-native";
-
+import {colors, fonts} from '../../../layout/'
 export default StyleSheet.create({
     container: {
         padding: 5,
         borderBottomWidth: 1,
-        borderColor: '#7793ff',
-        backgroundColor: '#e1d7ff',
+        borderColor:  colors.divider,
+        backgroundColor: colors.lightPrimary,
         flexDirection: 'row',
         alignItems: 'center',
     },
     lineText: {
-        fontSize: 20,
+        fontSize: fonts.regular,
         paddingLeft: 15,
         flex: 6,
     },

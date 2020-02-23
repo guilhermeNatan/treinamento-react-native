@@ -1,15 +1,15 @@
 import {StyleSheet} from "react-native";
 import React from "react";
-
+import { colors, fonts} from '../../layout'
 export default StyleSheet.create({
     detailContainer: {
         flexDirection: 'row',
         marginTop: 10 ,
-        backgroundColor: "#7dbeff",
+        backgroundColor: colors.lightPrimary,
         padding: 2
     },
     text: {
-        fontSize: 20,
+        fontSize: fonts.regular,
     },
     label: {
         fontWeight: 'bold',

@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import PeopleListPage from "./src/Pages/PeopleListPage/PeopleListPage";
 import PeopleDetailPage from "./src/Pages/PeopleDetailPage/PeopleDetailPage";
+import { colors, fonts } from './src/layout'
 
 const stackNavigator =  createStackNavigator ({
     Home: {
@@ -20,15 +20,15 @@ const stackNavigator =  createStackNavigator ({
 }, {
     defaultNavigationOptions : {
         title: 'Pessoas',
-        headerTintColor: 'white',
+        headerTintColor: colors.textSecondary,
         headerStyle: {
-            backgroundColor: "#7559ff",
+            backgroundColor: colors.primary,
             borderBottomWidth: 1,
-            borderBottomColor: 'blue',
+            borderBottomColor: colors.secondary,
         },
         headerTitleStyle: {
             color: 'white',
-            fontSize: 30,
+            fontSize: fonts.big,
         },
     }
 })

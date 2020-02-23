@@ -10,6 +10,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from "../../components/Header/Header";
 import PeopleList from "../../components/PeopleList/PeopleList";
+import styles from './styles.js'
 
 const PeopleListPage = props => {
 
@@ -22,11 +23,4 @@ const PeopleListPage = props => {
 
 
 export default PeopleListPage;
-
-
-const styles = StyleSheet.create({
-    conteiner : {
-        backgroundColor: 'blue',
-    }
-});
 
