@@ -1,6 +1,6 @@
 
 # Apresentação 
-Este projeto contêm código do treinamento sobre react-native 
+Este projeto contêm código do treinamento de react-native.
 
 # Autor do treinamento
  Guilherme Natan 
