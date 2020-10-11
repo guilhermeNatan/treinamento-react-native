@@ -1,7 +1,7 @@
 
 # Apresentação 
 Este projeto contêm código do treinamento de react-native.
-[Ir para apresentação] (https://docs.google.com/presentation/d/1oEnPK0DmsiViLdzn3crRs4zbhuqhHWp22ikfmSw7Frs/edit?usp=sharing
+[Ir para apresentação](https://docs.google.com/presentation/d/1oEnPK0DmsiViLdzn3crRs4zbhuqhHWp22ikfmSw7Frs/edit?usp=sharing
 )
 # Autor do treinamento
  Guilherme Natan 
